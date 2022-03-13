@@ -6,7 +6,8 @@
 --text-gray: #4a4a4a;
 --color-primary: #4D41C0;
 --white: #fff;
---test-light-gray: #aaa
+--text-light-gray: #aaa;
+--star-yellow: #ffbb3a;
 
 }
 
@@ -45,7 +46,7 @@ nav a {
     font-weight: 400;
     }
 
-a, a:hover{
+a, a:hover {
     text-decoration: none;
     color: unset;
 
@@ -62,8 +63,10 @@ a, a:hover{
 }
 
 
-       .dsmovie1-card {
-        width: 100%;
+.dsmovie1-card {
+    width: 360px;
+    height: 400px;
+    background-color: var(--white);
     
         
 }
@@ -73,18 +76,42 @@ a, a:hover{
 }
 .dsmovie1-card-description {
     background-color: var(--white);
-    padding: 10px 0 20px 0;
+    padding: 10px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
+    height: 220px;
 }
 .dsmovie1-card-description h3 {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 25px;
+    text-align: center;
 }
+
+.dsmovie1-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie1-card-description-bottom h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.dsmovie1-card-description-bottom img{
+    width: 22px;
+}
+.dsmovie1-card-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light-gray);
+}
+
 .dsmovie1-btn, .dsmovie1-btn:hover {
     width: 180px;
     height: 40px;
@@ -129,7 +156,8 @@ a, a:hover{
 }
 .dsmovie1-form-group label {
     font-size: 12px;
-    color: var(--test-light-gray)
+    
+
 }
 .dsmovie1-form-btn-container {
     height: 100px;
